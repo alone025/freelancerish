@@ -1,10 +1,11 @@
 import Footer from "./Footer";
-import Header from "./Header";
 import Navbar from "./Navbar";
+import HeaderComponent from "@/Layouts/header/component";
+
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <HeaderComponent />
       <Navbar />
       {children}
       <Footer />
