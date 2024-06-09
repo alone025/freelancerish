@@ -1,0 +1,109 @@
+.homeRotateGalery {
+  width: 100%;
+  height: 1600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.homeRotateGalery__back {
+  width: 100%;
+  height: 1500px;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../public/images/Rectangle\ 10.png");
+}
+
+.homeRotateGalery__rightTop {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 420px;
+  right: 130px;
+  background-image: url("../public/images/mosamWindow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__leftTop {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 100px;
+  left: -80px;
+  background-image: url("../public/images/openart-image_wsOBM5Am_1717543691899_raw\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__topCenter {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 200px;
+  right: 130px;
+  background-image: url("../public/images/openart-image_ku34Cfoh_1717543622073_raw\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__center {
+  position: absolute;
+  width: 1100px;
+  height: 1100px;
+  bottom: 0px;
+  left: -400px;
+  background-image: url("../public/images/image\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__img1 {
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 380px;
+  left: 480px;
+  background-image: url("../public/images/mosa7jr7M7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__img2 {
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 120px;
+  left: 200px;
+  background-image: url("../public/images/mosaGo3ZBU.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.homeRotateGalery__img3 {
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 550px;
+  left: 300px;
+  background-image: url("../public/images/mosahEqFwM\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

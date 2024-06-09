@@ -1,4 +1,5 @@
 import ContactSection from "@/components/ContactSection";
+import HomeRotateGalery from "@/components/HomeRotateGalery";
 import MainSectionBanner from "@/components/MainSectionBanner";
 import ImageCardComponent from "@/src/components/image-card/component";
 
@@ -22,6 +23,8 @@ export default function Home() {
           title={"이미지 제목/설명"}
         />
       </div> */}
+      <HomeRotateGalery />
+
       <ContactSection />
     </div>
   );
