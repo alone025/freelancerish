@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  color: #fafafa;
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  text-align: center;
+}
+
+.footerLeft {
+  width: 51.5%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../public/images/Rectangle\ 13.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 0;
+}
+
+.footerRight {
+  width: 51.5%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/images/Rectangle\ 14.png");
+  padding: 24px 0;
+}
