@@ -1,5 +1,5 @@
+import Header from "@/Layouts/Header";
 import React from "react";
-import "../styles/MainSectionBanner.module.css";
 
 const MainSectionBanner = ({ title, text, desc, img }) => {
   return (
@@ -9,9 +9,11 @@ const MainSectionBanner = ({ title, text, desc, img }) => {
       }}
       className="mainSectionBanner"
     >
-      <h2>{title}</h2>
-      <p>{text}</p>
-      <p>{desc}</p>
+      <Header />
+
+      <h2 className="mainBannerTitle">{title}</h2>
+      <p className="mainBannerText">{text}</p>
+      <p className="mainBannerDesc">{desc}</p>
     </div>
   );
 };
