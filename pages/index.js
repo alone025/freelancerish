@@ -2,6 +2,8 @@ import MainSectionBanner from "@/components/MainSectionBanner";
 import ImageCardComponent from "@/src/components/image-card/component";
 import {useState} from "react";
 import ModalComponent from "@/src/components/modal/component";
+import ContactSection from "@/components/ContactSection";
+import HomeRotateGalery from "@/components/HomeRotateGalery";
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,6 +61,10 @@ export default function Home() {
             </div>
             {isModalOpen &&
                 <ModalComponent images={images} initialIndex={selectedImageIndex} onClose={closeModal}/>}
+
+            <HomeRotateGalery />
+
+            <ContactSection />
         </div>
     );
 }
