@@ -1,5 +1,4 @@
 import MainSectionBanner from "@/components/MainSectionBanner";
-import ContactSection from "@/components/ContactSection";
 import HomeRotateGalery from "@/components/HomeRotateGalery";
 
 export default function Home() {
@@ -14,8 +13,6 @@ export default function Home() {
         />
       </main>
       <HomeRotateGalery />
-
-      {/* <ContactSection /> */}
     </div>
   );
 }

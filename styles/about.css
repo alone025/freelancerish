@@ -1,0 +1,108 @@
+.about__info {
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about__infoRec {
+  width: 471.971px;
+  height: 466.566px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  opacity: 0.49;
+  background: #c9d3d6;
+  top: -360px;
+  left: -30px;
+  position: absolute;
+}
+
+.about__infoTitle {
+  color: var(--Colors-Gray-700, #404040);
+  font-family: "Gmarket Sans TTF";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 120% */
+}
+
+.about__infoSubTitle {
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 130% */
+}
+
+.about__infoText {
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px;
+  margin: 16px auto;
+  max-width: 736px;
+}
+
+.about__map {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 80px auto;
+}
+
+.about__mapImg {
+  background-image: url("../public/images/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 426.206px;
+  height: 280.507px;
+  margin-bottom: 36px;
+}
+
+.about__mapRightImg {
+  background-image: url("../public/images/mapRIghtImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 36px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.about__text {
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px; /* 140% */
+  margin: 16px 0;
+  text-align: center;
+  max-width: 426.206px;
+}
+
+.about__textSpan {
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.4px; /* 140% */
+}
