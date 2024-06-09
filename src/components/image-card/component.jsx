@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from "next/image";
 
-export default function ImageCardComponent({src, title}) {
+export default function ImageCardComponent({src, title, onClick}) {
     return (
-        <div className="relative overflow-hidden group max-w-xs md:max-w-md">
+        <div className="relative overflow-hidden group max-w-xs md:max-w-md" onClick={onClick}>
             <div className="relative w-full transition-all duration-300 ease-in-out group-hover:h-2/3">
                 <div className="relative h-64 md:h-96">
                     <Image
