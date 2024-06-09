@@ -4,6 +4,7 @@ import "../styles/header.css";
 import "../styles/navbar.css";
 import "../styles/footer.css";
 import "../styles/mainSectionBanner.css";
+import "../styles/contactSection.css";
 
 function MyApp({ Component, pageProps }) {
   return (

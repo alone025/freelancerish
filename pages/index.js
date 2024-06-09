@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection";
 import MainSectionBanner from "@/components/MainSectionBanner";
 import ImageCardComponent from "@/src/components/image-card/component";
 
@@ -21,6 +22,7 @@ export default function Home() {
           title={"이미지 제목/설명"}
         />
       </div> */}
+      <ContactSection />
     </div>
   );
 }
