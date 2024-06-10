@@ -1,8 +1,39 @@
 import Link from "next/link";
 import MainSectionBanner from "@/components/MainSectionBanner";
 import {LuUploadCloud} from "react-icons/lu";
+import {useState} from "react";
+import Image from "next/image";
 
 const Contact = () => {
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState(null);
+    const [uploadResult, setUploadResult] = useState(null);
+
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        setSelectedFile(file);
+        setPreviewUrl(URL.createObjectURL(file));
+    };
+
+    const handleUpload = async () => {
+        if (!selectedFile) return;
+
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+
+        try {
+            const response = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+            setUploadResult(data.result);
+        } catch (error) {
+            console.error('Error uploading image:', error);
+        }
+    };
+
     return (
         <div className={'relative overflow-hidden'}>
             <div className="container">
@@ -39,9 +70,29 @@ const Contact = () => {
                                name="long-description"/>
 
                         <div
-                            className={'w-80 h-48 bg-gray-200 flex flex-col justify-center items-center mt-6 cursor-pointer'}>
-                            <LuUploadCloud size={32}/>
-                            <span className={'text-base'}>사진등록</span>
+                            className="w-80 h-48 flex flex-col items-center justify-center relative bg-gray-200 cursor-pointer mt-6"
+                            onClick={() => document.getElementById('fileInput').click()}
+                        >
+                            {previewUrl ? (
+                                <div className="mt-4">
+                                    <Image src={previewUrl} alt={"previewUrl"}
+                                           layout="fill"
+                                           objectFit="cover"
+                                           className="absolute mt-2 w-64 h-64 object-cover"/>
+                                </div>
+                            ) : (
+                                <div className={'flex flex-col items-center justify-center'}>
+                                    <LuUploadCloud size={32}/>
+                                    <p className="mt-2 text-base text-gray-600">사진등록</p>
+                                </div>
+                            )}
+                            <input
+                                id="fileInput"
+                                type="file"
+                                accept="image/*"
+                                style={{display: 'none'}}
+                                onChange={handleFileChange}
+                            />
                         </div>
 
                         <label htmlFor="select-list" className={'text-sm font-bold mt-6 mb-2'}>목록 선택</label>
@@ -61,8 +112,11 @@ const Contact = () => {
                         </div>
 
                         <div className={'w-full flex items-center justify-end mt-6 mb-16 gap-8'}>
-                            <button className={'py-2 px-4 border border-[#0D9488] text-[#0D9488] w-52 rounded'}>취소</button>
-                            <button className={'py-2 px-4 border-none bg-[#0D9488] text-white w-52 rounded'}>등록</button>
+                            <button className={'py-2 px-4 border border-[#0D9488] text-[#0D9488] w-52 rounded'}>취소
+                            </button>
+                            <button disabled={!selectedFile} onClick={handleUpload} type={'button'}
+                                    className={'py-2 px-4 border-none bg-[#0D9488] text-white w-52 rounded'}>등록
+                            </button>
                         </div>
                     </form>
                 </div>
