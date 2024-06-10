@@ -1,7 +1,7 @@
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
-const CompanyRotateGalery = () => {
+const CompanyRotateGallery = () => {
   return (
     <div className="companyRotateGalery">
       <div className="companyRotateGalery__info">
@@ -46,4 +46,4 @@ const CompanyRotateGalery = () => {
   );
 };
 
-export default CompanyRotateGalery;
+export default CompanyRotateGallery;

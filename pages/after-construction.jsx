@@ -1,4 +1,4 @@
-import MainSectionBanner from '@/components/MainSectionBanner';
+import MainSectionBanner from '@/src/components/main-section-banner';
 import ImageCardComponent from '@/src/components/image-card/component';
 import {useEffect, useState} from 'react';
 import ModalComponent from '@/src/components/modal/component';

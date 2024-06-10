@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MainSectionBanner from "@/components/MainSectionBanner";
+import MainSectionBanner from "@/src/components/main-section-banner";
 import {LuUploadCloud} from "react-icons/lu";
 import {useState} from "react";
 import Image from "next/image";

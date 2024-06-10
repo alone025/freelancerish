@@ -1,5 +1,5 @@
-import MainSectionBanner from "@/components/MainSectionBanner";
-import ContactSection from "@/components/ContactSection";
+import MainSectionBanner from "@/src/components/main-section-banner";
+import ContactSection from "@/src/components/contact-section";
 
 const about = () => {
   return (

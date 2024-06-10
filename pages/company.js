@@ -1,5 +1,5 @@
-import MainSectionBanner from "@/components/MainSectionBanner";
-import CompanyRotateGalery from "@/components/CompanyRotateGalery";
+import MainSectionBanner from "@/src/components/main-section-banner";
+import CompanyRotateGallery from "@/src/components/rotate-gallery/company-rotate-gallery";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
           img="/images/mainBanner2.png"
         />
       </main>
-      <CompanyRotateGalery />
+      <CompanyRotateGallery />
     </div>
   );
 }

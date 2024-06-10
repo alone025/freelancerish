@@ -1,5 +1,5 @@
-import MainSectionBanner from "@/components/MainSectionBanner";
-import HomeRotateGalery from "@/components/HomeRotateGalery";
+import MainSectionBanner from "@/src/components/main-section-banner";
+import HomeRotateGallery from "@/src/components/rotate-gallery/home-rotate-gallery";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
           img="/images/mainBanner.png"
         />
       </main>
-      <HomeRotateGalery />
+      <HomeRotateGallery />
     </div>
   );
 }
