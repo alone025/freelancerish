@@ -6,9 +6,9 @@ const Navbar = () => {
             <Link href={"/"} className="navbarItem">
                 Home
             </Link>
-            <li className="navbarItem">
+            <Link href={'/company'} className="navbarItem">
                 업체소개
-            </li>
+            </Link>
             <Link href={"/after-construction"} className="navbarItem">
                 시공사례
             </Link>

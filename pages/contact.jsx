@@ -21,20 +21,20 @@ const Contact = () => {
                 </div>
                 <div className="relative w-full h-auto">
                     <form className={'flex flex-col px-2'}>
-                        <label htmlFor="title" className={'text-sm font-normal'}>제목</label>
+                        <label htmlFor="title" className={'text-sm font-bold mb-2'}>제목</label>
                         <input className={'px-8 py-4 w-full md:w-2/3'} id="title" type="text" name="title"/>
 
-                        <label htmlFor="contact" className={'text-sm font-normal mt-6'}>연락처</label>
+                        <label htmlFor="contact" className={'text-sm font-bold mt-6 mb-2'}>연락처</label>
                         <input id="contact" type="text" className={'px-8 py-4 w-full md:w-96'} name="contact"/>
 
-                        <label htmlFor="mail" className={'text-sm font-normal mt-6'}>이메일</label>
+                        <label htmlFor="mail" className={'text-sm font-bold mt-6 mb-2'}>이메일</label>
                         <input id="mail" type="text" className={'px-8 py-4 w-full md:w-96'} name="mail"/>
 
-                        <label htmlFor="short-description" className={'text-sm font-normal mt-6'}>단문 입력</label>
+                        <label htmlFor="short-description" className={'text-sm font-bold mt-6 mb-2'}>단문 입력</label>
                         <input id="short-description" type="text" className={'px-8 py-4 w-full md:w-2/3'}
                                name="short-description"/>
 
-                        <label htmlFor="long-description" className={'text-sm font-normal mt-6'}>장문 입력</label>
+                        <label htmlFor="long-description" className={'text-sm font-bold mt-6 mb-2'}>장문 입력</label>
                         <input id="long-description" type="textarea" className={'px-8 py-4 w-full md:w-2/3'}
                                name="long-description"/>
 
@@ -44,14 +44,14 @@ const Contact = () => {
                             <span className={'text-base'}>사진등록</span>
                         </div>
 
-                        <label htmlFor="select-list" className={'text-sm font-normal mt-6'}>목록 선택</label>
+                        <label htmlFor="select-list" className={'text-sm font-bold mt-6 mb-2'}>목록 선택</label>
                         <select className={'px-8 py-4 w-full md:w-96'} name="select-list" id="select-list">
                             <option value="lorem">Lorem ipsum</option>
                             <option value="lorem1">Lorem ipsum</option>
                         </select>
 
                         <label htmlFor="short-description"
-                               className={'text-base font-normal mt-6 flex items-center gap-2'}>
+                               className={'text-base font-bold mt-6 flex items-center gap-2'}>
                             <input type="checkbox" className={'w-12 h-12'}/>
                             개인정보 수집 및 이용에 동의합니다.
                         </label>
