@@ -61,7 +61,7 @@ export default function afterConstruction() {
                        className="absolute"
                 />
             </div>
-            <div className={'grid grid-cols-4 gap-12 my-10'}>
+            <div className={'grid grid-cols-4 gap-12 mt-10 mb-20'}>
                 {images.map((image, index) => (
                     <ImageCardComponent
                         key={index}
