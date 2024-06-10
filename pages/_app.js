@@ -6,6 +6,7 @@ import "../styles/footer.css";
 import "../styles/mainSectionBanner.css";
 import "../styles/contactSection.css";
 import "../styles/homeRotateGalery.css";
+import "../styles/about.css";
 
 function MyApp({ Component, pageProps }) {
   return (
