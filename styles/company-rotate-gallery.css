@@ -1,224 +1,278 @@
 .companyRotateGalery {
-    width: 100%;
-    height: 900px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 40px;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .companyRotateGalery__back {
-    width: 100%;
-    height: 1500px;
-    position: absolute;
-    top: 0;
-    left: -80px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("../public/images/Rectangle\ 10.png");
+  width: 100%;
+  height: 1500px;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../public/images/Rectangle\ 10.png");
 }
 
 .companyRotateGalery__rightTop {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    top: 510px;
-    right: 130px;
-    background-image: url("../public/images/mosamWindow.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 510px;
+  right: 130px;
+  background-image: url("../public/images/mosamWindow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__leftTop {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: 100px;
-    left: -80px;
-    background-image: url("../public/images/openart-image_wsOBM5Am_1717543691899_raw\ 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 100px;
+  left: -80px;
+  background-image: url("../public/images/openart-image_wsOBM5Am_1717543691899_raw\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__topCenter {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: 327px;
-    right: 130px;
-    background-image: url("../public/images/openart-image_ku34Cfoh_1717543622073_raw\ 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 327px;
+  right: 130px;
+  background-image: url("../public/images/openart-image_ku34Cfoh_1717543622073_raw\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: 0.3s;
 }
 
 .companyRotateGalery__center {
-    position: absolute;
-    width: 1100px;
-    height: 1100px;
-    bottom: 0px;
-    left: -400px;
-    background-image: url("../public/images/image\ 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  width: 1100px;
+  height: 1100px;
+  bottom: 0px;
+  left: -400px;
+  background-image: url("../public/images/image\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__img1 {
-    width: 310px;
-    position: absolute;
-    height: 310px;
-    bottom: 380px;
-    left: 480px;
-    background-image: url("../public/images/mosa7jr7M7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 380px;
+  left: 480px;
+  background-image: url("../public/images/mosa7jr7M7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__img2 {
-    width: 310px;
-    position: absolute;
-    height: 310px;
-    bottom: 120px;
-    left: 200px;
-    background-image: url("../public/images/mosaGo3ZBU.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 120px;
+  left: 200px;
+  background-image: url("../public/images/mosaGo3ZBU.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__img3 {
-    width: 310px;
-    position: absolute;
-    height: 310px;
-    bottom: 550px;
-    left: 300px;
-    background-image: url("../public/images/mosahEqFwM\ 1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 310px;
+  position: absolute;
+  height: 310px;
+  bottom: 550px;
+  left: 300px;
+  background-image: url("../public/images/mosahEqFwM\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .companyRotateGalery__info {
-    width: 100%;
-    position: relative;
-    top: 150px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 730px;
-    margin: 0 auto;
-    text-align: center;
+  width: 100%;
+  position: relative;
+  top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .companyRotateGalery__infoTitle {
-    color: var(--Colors-Gray-700, #404040);
-    font-family: "Gmarket Sans TTF";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28.8px; /* 120% */
+  color: var(--Colors-Gray-700, #404040);
+  font-family: "Gmarket Sans TTF";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 120% */
 }
 
 .companyRotateGalery__infoSubTitle {
-    color: var(--Colors-Gray-700, #404040);
-    text-align: center;
-    font-family: "Gmarket Sans TTF";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20.8px; /* 130% */
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 130% */
 }
 
 .companyRotateGalery__infoText1 {
-    color: var(--Colors-Gray-700, #404040);
-    text-align: center;
-    font-family: "Gmarket Sans TTF";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20.8px; /* 130% */
-    margin-top: 29px;
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 130% */
+  margin-top: 29px;
 }
 
 .companyRotateGalery__infoText2 {
-    color: var(--Colors-Gray-700, #404040);
-    text-align: center;
-    font-family: "Gmarket Sans TTF";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20.8px; /* 130% */
-    margin-top: 48px;
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 130% */
+  margin-top: 48px;
 }
 .companyRotateGalery__infoText3 {
-    color: var(--Colors-Gray-700, #404040);
-    text-align: center;
-    font-family: "Gmarket Sans TTF";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20.8px; /* 130% */
-    margin-top: 48px;
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 130% */
+  margin-top: 48px;
 }
 
 .companyRotateGalery__infoBtn {
-    color: var(--Colors-Gray-700, #404040);
-    text-align: center;
-    font-family: "Gmarket Sans TTF";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20.8px; /* 65% */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    display: inline-flex;
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background: #ecfffa;
-    margin-top: 32px;
-    cursor: pointer;
+  color: var(--Colors-Gray-700, #404040);
+  text-align: center;
+  font-family: "Gmarket Sans TTF";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.8px; /* 65% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: inline-flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #ecfffa;
+  margin-top: 32px;
+  cursor: pointer;
 }
 
 .companyRotateGalery__info2 {
-    position: absolute;
-    bottom: 400px;
-    right: 50px;
-    text-align: center;
-    width: 274px;
+  position: absolute;
+  bottom: 400px;
+  right: 50px;
+  text-align: center;
+  width: 274px;
 }
 
 .companyRotateGalery__info2Text {
-    color: var(--Colors-Gray-700, #404040);
-    font-family: "Gmarket Sans TTF";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--Colors-Gray-700, #404040);
+  font-family: "Gmarket Sans TTF";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .companyRotateGalery__topRec {
-    position: absolute;
-    top: -300px;
-    right: -200px;
-    width: 471.971px;
-    height: 466.566px;
-    transform: rotate(-45deg);
-    flex-shrink: 0;
-    opacity: 0.49;
-    background: #c9d3d6;
+  position: absolute;
+  top: -300px;
+  right: -200px;
+  width: 471.971px;
+  height: 466.566px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  opacity: 0.49;
+  background: #c9d3d6;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1256px) {
+  .companyRotateGalery__topCenter {
+    right: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  .companyRotateGalery__leftTop {
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.3s;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .companyRotateGalery__topCenter {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  .companyRotateGalery__rightTop {
+    width: 350px;
+    height: 350px;
+    transition: 0.3s;
+    opacity: 0.8;
+    top: 525px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .companyRotateGalery__infoText2,
+  .companyRotateGalery__infoText1,
+  .companyRotateGalery__infoText3,
+  .companyRotateGalery__infoTitle {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  .companyRotateGalery__topCenter,
+  .companyRotateGalery__leftTop {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .companyRotateGalery__rightTop {
+    z-index: -1;
+    opacity: 0.8;
+  }
 }

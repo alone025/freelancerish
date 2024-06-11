@@ -54,3 +54,28 @@
   border-radius: 4px;
   background: #0d9488;
 }
+
+@media screen and (max-width: 836px) {
+  .header {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+
+.header-right-media {
+  display: none;
+}
+
+@media screen and (max-width: 494px) {
+  .headerRightItems {
+    display: none;
+  }
+  .header-right-media {
+    display: flex;
+  }
+}

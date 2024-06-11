@@ -40,3 +40,25 @@
   background-image: url("../public/images/Rectangle\ 14.png");
   padding: 24px 0;
 }
+
+@media screen and (max-width: 648px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerLeft {
+    width: 100%;
+  }
+  .footerRight {
+    top: 100px;
+    left: -30px;
+    width: 105%;
+  }
+}
+@media screen and (max-width: 648px) {
+  .footerRight {
+    top: 100px;
+    left: 0;
+    width: 100%;
+  }
+}

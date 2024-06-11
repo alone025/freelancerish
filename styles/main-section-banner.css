@@ -43,3 +43,46 @@
   line-height: 20.8px; /* 130% */
   margin-top: 8px;
 }
+
+@media screen and (max-width: 700px) {
+  .mainBannerTitle {
+    font-size: 38px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mainBannerText {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mainBannerTitle {
+    font-size: 36px;
+  }
+  .mainBannerText {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mainBannerDesc {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .mainBannerTitle {
+    font-size: 34px;
+  }
+  .mainBannerText {
+    font-size: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mainBannerDesc {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

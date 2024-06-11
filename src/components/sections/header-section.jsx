@@ -1,12 +1,17 @@
 import { IoIosArrowForward } from "react-icons/io";
-import {Navbar} from "@/src/components";
+import { Navbar } from "@/src/components";
+import { FiMenu } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
+import React from "react";
 
 export default function HeaderComponent() {
+  const [menuBarOpen, setMenuBarOpen] = React.useState(false);
+
   return (
     <div className="header">
       <div className="headerLogo" />
 
-      <Navbar />
+      <Navbar setOpen={menuBarOpen} />
 
       <div className="headerRight">
         <ul className="headerRightItems">
@@ -17,7 +22,18 @@ export default function HeaderComponent() {
         </ul>
 
         <button className="headerRightBtn">견적문의전화</button>
+        {!menuBarOpen ? (
+          <FiMenu
+            className="md:hidden flex w-7 h-7"
+            onClick={() => setMenuBarOpen(true)}
+          />
+        ) : (
+          <IoClose
+            className="md:hidden flex w-8 h-8"
+            onClick={() => setMenuBarOpen(false)}
+          />
+        )}
       </div>
     </div>
   );
-};
+}

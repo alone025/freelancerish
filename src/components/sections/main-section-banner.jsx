@@ -17,5 +17,5 @@ const MainSectionBanner = ({ title, text, desc, img }) => {
     </div>
   );
 };
-
+  
 export default MainSectionBanner;
