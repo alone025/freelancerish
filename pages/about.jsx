@@ -1,11 +1,10 @@
-import MainSectionBanner from "@/src/components/main-section-banner";
-import ContactSection from "@/src/components/contact-section";
+import {MainBannerSection, ContactSection} from "@/src/components";
 
-const about = () => {
+export default function AboutController() {
   return (
     <div className="container">
       <div>
-        <MainSectionBanner
+        <MainBannerSection
           title={"청주지붕공사 "}
           text={"30년 경력의 지붕장인 청주지붕공사 입니다."}
           desc={"지붕개량/칼라강판/기와/슁글/징크 시공전문"}
@@ -73,5 +72,3 @@ const about = () => {
     </div>
   );
 };
-
-export default about;

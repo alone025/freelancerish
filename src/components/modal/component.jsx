@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import ThumbnailComponent from "@/src/components/thumbnail/component";
 import Image from "next/image";
+import {Thumbnail} from "@/src/components";
 
 export default function ModalComponent({images, initialIndex, onClose}) {
     const [currentIndex, setCurrentIndex] = useState(initialIndex);
@@ -30,7 +30,7 @@ export default function ModalComponent({images, initialIndex, onClose}) {
                             </div>
                             <div className="flex w-full overflow-hidden overflow-x-scroll gap-4">
                                 {images.map((image, index) => (
-                                    <ThumbnailComponent
+                                    <Thumbnail
                                         key={index}
                                         src={image.src}
                                         alt={image.alt}

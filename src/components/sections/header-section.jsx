@@ -1,7 +1,7 @@
-import Navbar from "./Navbar";
 import { IoIosArrowForward } from "react-icons/io";
+import {Navbar} from "@/src/components";
 
-const Header = () => {
+export default function HeaderComponent() {
   return (
     <div className="header">
       <div className="headerLogo" />
@@ -21,5 +21,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

@@ -1,8 +1,7 @@
-import Link from "next/link";
-import MainSectionBanner from "@/src/components/main-section-banner";
 import {LuUploadCloud} from "react-icons/lu";
 import {useState} from "react";
 import Image from "next/image";
+import {MainBannerSection} from "@/src/components";
 
 const Contact = () => {
     const [selectedFile, setSelectedFile] = useState(null);
@@ -38,7 +37,7 @@ const Contact = () => {
         <div className={'relative overflow-hidden'}>
             <div className="container">
                 <main>
-                    <MainSectionBanner
+                    <MainBannerSection
                         title={'청주지붕공사'}
                         text={'30년 경력의 지붕장인 청주지붕공사 입니다.'}
                         desc={'지붕개량/칼라강판/기와/슁글/징크 시공전문'}

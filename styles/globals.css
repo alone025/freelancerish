@@ -16,3 +16,13 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+@import "./about.css";
+@import "company-rotate-gallery.css";
+@import "contact-section.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./home.css";
+@import "home-rotate-gallery.css";
+@import "main-section-banner.css";
+@import "./navbar.css";

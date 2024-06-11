@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-const Navbar = () => {
+export default function NavbarComponent(){
+
     return (
-        <ul className="navbar">
+        <ul className="hidden md:flex items-center justify-center gap-4">
             <Link href={"/"} className="navbarItem">
                 Home
             </Link>
@@ -19,5 +20,3 @@ const Navbar = () => {
         </ul>
     );
 };
-
-export default Navbar;
