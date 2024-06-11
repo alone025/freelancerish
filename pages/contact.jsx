@@ -2,8 +2,12 @@ import {LuUploadCloud} from "react-icons/lu";
 import {useState} from "react";
 import Image from "next/image";
 import {MainBannerSection} from "@/src/components";
+import axios from 'axios';
+import {useRouter} from "next/router";
 
 const Contact = () => {
+
+    const router = useRouter()
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
     const [uploadResult, setUploadResult] = useState(null);
@@ -27,12 +31,29 @@ const Contact = () => {
             });
 
             const data = await response.json();
-            setUploadResult(data.result);
+            console.log(data)
+            return data.result
         } catch (error) {
             console.error('Error uploading image:', error);
         }
     };
 
+    const handleUploadImages = async (body) => {
+        try {
+            const response = await axios({
+                method: "POST",
+                url: 'https://for-images.kalandarovjamshid01.workers.dev/images',
+                data: JSON.stringify(body),
+                headers: {
+                    "Content-Type": 'application/json'
+                }
+            });
+            const data = await response.json();
+            console.log(data)
+        } catch (e) {
+            console.log(e)
+        }
+    }
     return (
         <div className={'relative overflow-hidden'}>
             <div className="container">
@@ -50,7 +71,55 @@ const Contact = () => {
                     <p className={'text-xl font-normal text-center'}>나의 문의/신청 내역</p>
                 </div>
                 <div className="relative w-full h-auto">
-                    <form className={'flex flex-col px-2'}>
+                    <form
+                        className={'flex flex-col px-2'}
+                        onSubmit={async (e) => {
+                            e.preventDefault();
+
+                           const uploadImage =  await handleUpload();
+
+                            const formElement = e.target;
+                            const form = new FormData(formElement);
+
+                            const img = {
+                                img_url: uploadImage?.secure_url,
+                                file_name: uploadImage?.original_filename,
+                                width: uploadImage?.width,
+                                bytes: uploadImage?.bytes,
+                                height: uploadImage?.height,
+                                format: uploadImage?.format,
+                                title: form.get('title'),
+                                context: form.get('short-description'),
+                                folder: "contact_image"
+                            }
+
+                            await handleUploadImages(img)
+
+                            const data = {
+                                title: form.get('title'),
+                                mail: form.get('mail'),
+                                contact: form.get('contact'),
+                                short_description: form.get('short-description'),
+                                long_description: form.get('long-description'),
+                                img_url: uploadImage?.secure_url,
+                            }
+
+                            const config = {
+                                method: 'post',
+                                url: 'https://project-1-submissions.kalandarovjamshid01.workers.dev',
+                                data: data
+                            };
+
+                            axios(config)
+                                .then((response) => {
+                                    console.log(JSON.stringify(response.data));
+                                    router.push('/after-construction')
+                                })
+                                .catch((error) => {
+                                    console.log(error);
+                                });
+                        }}
+                    >
                         <label htmlFor="title" className={'text-sm font-bold mb-2'}>제목</label>
                         <input className={'px-8 py-4 w-full md:w-2/3'} id="title" type="text" name="title"/>
 
@@ -111,9 +180,10 @@ const Contact = () => {
                         </div>
 
                         <div className={'w-full flex items-center justify-end mt-6 mb-16 gap-8'}>
-                            <button className={'py-2 px-4 border border-[#0D9488] text-[#0D9488] w-52 rounded'}>취소
+                            <button type={'button'}
+                                    className={'py-2 px-4 border border-[#0D9488] text-[#0D9488] w-52 rounded'}>취소
                             </button>
-                            <button disabled={!selectedFile} onClick={handleUpload} type={'button'}
+                            <button disabled={!selectedFile} type={'submit'}
                                     className={'py-2 px-4 border-none bg-[#0D9488] text-white w-52 rounded'}>등록
                             </button>
                         </div>

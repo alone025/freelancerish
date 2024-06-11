@@ -7,7 +7,7 @@ export default function ImageCardComponent({src, title, onClick}) {
             <div className="relative w-full transition-all duration-300 ease-in-out group-hover:h-2/3">
                 <div className="relative h-64 md:h-96">
                     <Image
-                        src={src}
+                        src={src || "https://images.freeimages.com/fic/images/icons/1811/houses/128/house_yellow.png?fmt=webp&w=500"}
                         alt={title}
                         layout="fill"
                         objectFit="cover"
