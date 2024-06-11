@@ -12,7 +12,7 @@ export default function AfterConstruction() {
 
     const page = 1;
     const pageSize = 10;
-    const query = 'my_website_folder';
+    const query = 'my_website_image';
 
     useEffect( () => {
         const fetchImages = async () => {
